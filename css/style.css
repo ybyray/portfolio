@@ -1,0 +1,164 @@
+body {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+}
+
+.header {
+  background: url(/img/headerbg.jpg) no-repeat center / cover;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header__title {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header__subtitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.header__arrow img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 30px;
+  margin-left: -10px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.portfolio__title {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 50px;
+}
+
+.col-4 {
+  width: 360px;
+  padding-left: 30px;
+}
+
+.col-4__img {
+  margin-bottom: 15px;
+}
+
+.col-4__img img {
+  width: 100%;
+  height: auto;
+}
+
+.col-4__title a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
+  line-height: normal;
+  border-bottom: 1px solid #ffffff;
+  transition: 0.2s linear;
+}
+
+.col-4__title a:hover {
+  color: #7935f8;
+  border-color: #7935f8;
+}
+
+img {
+  display: inline-block;
+}
+
+.footer {
+  text-align: center;
+  background-color: #441a66;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__title {
+  font-size: 24px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.footer__item {
+  margin: 0 auto;
+}
+
+.footer__item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: 0.2s ease-out;
+}
+
+.footer__item img:hover {
+  background-color: #131313;
+  border-radius: 60%;
+}
+
+/* MEDIA */
+
+@media (max-width: 1160px) {
+
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .col-4 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+
+  .header__title {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
+  }
+
+  .footer__title {
+    font-size: 20px;
+  }
+
+  .footer__item img {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+  }
+}
